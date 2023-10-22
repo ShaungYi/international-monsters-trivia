@@ -22,7 +22,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Description
 
-Run on: desktop or TV
+Run on: desktop or TV <br /> <br /> 
 International Monsters Trivia is an in-person game for the UW Circle of Friends Halloween event. It is meant to be a presentation on a large screen TV
 
 
