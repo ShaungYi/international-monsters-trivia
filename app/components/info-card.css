@@ -1,0 +1,100 @@
+.info-card {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3em;
+
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ffc34179;
+
+    width: fit-content;
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    max-width: 30vw;
+}
+
+.info-card-title {
+    opacity: 1;
+    font-weight: bold;
+    color: #862FE0;
+}
+
+
+.info-card-content {
+    color: #373038;
+}
+
+.info-card-content-revealed {
+    animation: greenBlinkIn 1.5s ease-in;
+    color: #373038;
+}
+
+.hint{
+    animation: redBlinkIn 1.5s ease-in;
+    color: #373038;
+}
+
+.info-card-content-hidden {
+    color: #ab1d4f;
+    animation: blink 1s linear infinite;
+}
+
+.fade-in{
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes blink {
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes greenBlinkIn {
+    0% {
+        color: #8adf35;
+    }
+    75%{
+        color: #8adf35;
+    }
+
+    100% {
+        color: #373038;
+    }
+
+}
+
+@keyframes redBlinkIn {
+    0% {
+        color: #ab1d4f;
+    }
+    75%{
+        color: #ab1d4f;
+    }
+
+    100% {
+        color: #373038;
+    }
+
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,23 @@
+.fun-fact{
+    max-width: 30vw;
+    max-height: 80vh;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.fun-fact-img{
+    max-width: 30vw;
+}
+
+.fun-fact-card{
+    position:static;
+    margin-top: 20px;
+}

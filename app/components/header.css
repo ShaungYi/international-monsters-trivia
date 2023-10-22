@@ -1,0 +1,35 @@
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.logo-img{
+    height: 12vh;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-family: Shlop;
+    color: #ffc341a0;
+}
+
+.cof-txt{
+    font-size: 10vh;
+    color: #862FE0;
+}
+
+.game-name-txt{
+    font-size: 3.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
