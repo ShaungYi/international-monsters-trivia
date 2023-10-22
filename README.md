@@ -30,17 +30,17 @@ International Monsters Trivia is an in-person game for the UW Circle of Friends 
 
 The controls are all through the keyboard.
 
-# Presenter Key Guide:
+### Presenter Key Guide
 
-n - reveal name
-c - reveal country
-h - reveal hint
-space - next item
+n - reveal name <br /> 
+c - reveal country <br /> 
+h - reveal hint <br /> 
+space - next item <br /> <br /> 
 
-right arrow - skip to next monster
-left arrow - go back to last monster
+right arrow - skip to next monster <br /> 
+left arrow - go back to last monster <br /> 
 
-# Participants
+### Participants
 
 The participants must shout out either the name or the country/region of the monster on screen. The first person to get either item correct gets halloween candy as the prize.
 
