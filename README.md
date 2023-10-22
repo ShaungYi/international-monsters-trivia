@@ -20,6 +20,31 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Description
+
+Run on: desktop or TV
+International Monsters Trivia is an in-person game for the UW Circle of Friends Halloween event. It is meant to be a presentation on a large screen TV
+
+
+## How to Play
+
+The controls are all through the keyboard.
+
+# Presenter Key Guide:
+
+n - reveal name
+c - reveal country
+h - reveal hint
+space - next item
+
+right arrow - skip to next monster
+left arrow - go back to last monster
+
+# Participants
+
+The participants must shout out either the name or the country/region of the monster on screen. The first person to get either item correct gets halloween candy as the prize.
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -29,8 +54,10 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
