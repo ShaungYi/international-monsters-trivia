@@ -2,3 +2,9 @@
   font-family: Shlop;
   src: url("/fonts/shlop_rg.otf") format("opentype");
 }
+
+body{
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
