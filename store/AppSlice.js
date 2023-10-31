@@ -106,12 +106,12 @@ export const monsters = [
         funFactImgSrc: 'viking_treasure.jpeg'
     },
     {
-        imgSrc: 'yaksha.jpeg',
+        imgSrc: 'yaksha.png',
         name: 'Yaksha (male), Yakshi (female)',
         country: 'India, Thailand',
         description: 'They are forest spirits connected to trees and the wild. They sometimes guard treasures or a temple',
         funFact: 'Evil Yakshas are like Bhutas (ghosts). They eat travelers lost in the forest',
-        funFactImgSrc: 'yaksha.png'
+        funFactImgSrc: 'bhuta.jpeg'
     },
     {
         imgSrc: 'gumiho.jpg',
@@ -183,7 +183,7 @@ export const monsters = [
         country: 'India',
         description: 'They are monkey people who live in the forest and fight demons',
         funFact: 'In the epic Ramayana, the main character Rama\'s best friend Hanuman is a Vanara',
-        funFactImgSrc: 'hanuman_rama.jpeg'
+        funFactImgSrc: 'hanuman-rama.jpeg'
     },
     {
         imgSrc: 'gashadokuro.jpg',
