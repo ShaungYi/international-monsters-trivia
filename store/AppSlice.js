@@ -184,7 +184,7 @@ export const monsters = [
         description: 'They are monkey people who live in the forest and fight demons',
         funFact: 'In the epic Ramayana, the main character Rama\'s best friend Hanuman is a Vanara',
         funFactImgSrc: 'hanuman_rama.jpeg'
-    }
+    },
     {
         imgSrc: 'gashadokuro.jpg',
         name: 'Gashadokuro',
