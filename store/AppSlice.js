@@ -1,8 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-
-
-
 export const monsters = [
     {
         imgSrc: 'dokkebi.png',
@@ -109,6 +106,14 @@ export const monsters = [
         funFactImgSrc: 'viking_treasure.jpeg'
     },
     {
+        imgSrc: 'yaksha.jpeg',
+        name: 'Yaksha (male), Yakshi (female)',
+        country: 'India, Thailand',
+        description: 'They are forest spirits connected to trees and the wild. They sometimes guard treasures or a temple',
+        funFact: 'Evil Yakshas are like Bhutas (ghosts). They eat travelers lost in the forest',
+        funFactImgSrc: 'yaksha.png'
+    },
+    {
         imgSrc: 'gumiho.jpg',
         name: 'Nine-tailed Fox',
         country: 'China, Japan, Korea',
@@ -172,6 +177,14 @@ export const monsters = [
         funFact: 'Some people say they kill prey with electric shocks, and that they are so poisonous that you die just by touching them',
         funFactImgSrc: 'death-worm-in-book.png'
     },
+    {
+        imgSrc: 'vanara.jpg',
+        name: 'Vanara',
+        country: 'India',
+        description: 'They are monkey people who live in the forest and fight demons',
+        funFact: 'In the epic Ramayana, the main character Rama\'s best friend Hanuman is a Vanara',
+        funFactImgSrc: 'hanuman_rama.jpeg'
+    }
     {
         imgSrc: 'gashadokuro.jpg',
         name: 'Gashadokuro',
