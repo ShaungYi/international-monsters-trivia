@@ -7,6 +7,7 @@ import { shallowEqual, useDispatch, useSelector } from 'react-redux'
 import { AppSliceActions } from '@/store/store'
 import { monsters } from '@/store/AppSlice'
 import FunFact from './components/FunFact'
+import StartScreen from './components/StartScreen'
 
 
 
@@ -20,6 +21,8 @@ export default function Home() {
   const monster = monsters[index]
   const [imgSrc, name, country, description, funFact, funFactImgSrc] = [monster.imgSrc, monster.name, monster.country, monster.description, monster.funFact, monster.funFactImgSrc]
 
+
+  const [isStart, setIsStart] = useState(true)
 
   const [isInfoCardVisible, setIsInfoCardVisible] = useState(true)
 
@@ -37,7 +40,9 @@ export default function Home() {
 
     if (event.key === ' ') {
 
-      if (isNameVisible && isCountryVisible) {
+      setIsStart(false)
+
+      if (isNameVisible && isCountryVisible && !isStart) {
 
         if (!isHintVisible) {
           dispatch(AppSliceActions.setIsHintVisible(true))
@@ -46,15 +51,21 @@ export default function Home() {
           dispatch(AppSliceActions.setIsFunFactVisible(true))
         }
         else if (
-          allowed.current &&
-          index < monsters.length - 1) {
+          allowed.current) {
 
-          dispatch(AppSliceActions.incMonsterIndex())
+          if (index < monsters.length - 1){
+            dispatch(AppSliceActions.incMonsterIndex())
+            setIsInfoCardVisible(false)
+          }
+          else {
+            setIsStart(true)
+            dispatch(AppSliceActions.setMonsterIndex(0))
+
+          }
           resetInfo()
 
-          setIsInfoCardVisible(false)
+        } 
 
-        }
       }
       allowed.current = false
     }
@@ -91,7 +102,6 @@ export default function Home() {
       tabIndex={0}
       onKeyDown={onKeyPress}
       onKeyUp={(event) => { allowed.current = true }}>
-      <Header />
       {isFunFactVisible &&
         <FunFact
           funFact={funFact}
@@ -106,7 +116,10 @@ export default function Home() {
           isCountryVisible={isCountryVisible}
           isHintVisible={isHintVisible} />
       }
-
+      {isStart &&
+        <StartScreen/>
+      }
+      <Header />
     </main>
   )
 }

@@ -271,6 +271,9 @@ const AppSlice = createSlice({
                 state.monsterIndex--;
             }
         },
+        setMonsterIndex(state, action){
+            state.monsterIndex = action.payload
+        },
         setIsNameVisible(state, action) {
             state.isNameVisible = action.payload
         },

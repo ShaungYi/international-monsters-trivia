@@ -4,6 +4,9 @@ header{
     display: flex;
     flex-direction: row;
     align-items: start;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .logo-img{
